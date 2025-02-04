@@ -27,7 +27,7 @@ jobs:
 
       - name: Run Secret Detector
         id: secret-detector
-        run:  s1-cns-cli scan secret -d $PWD --all-commits --publish-result
+        run:  s1-cns-cli scan secret -d $PWD --pre-commit --publish-result
         #run:  s1-cns-cli scan secret -d $PWD
         #run:  s1-cns-cli scan secret -d $PWD --pull-request origin/$SRC $DEST --publish-result --repo-full-name $REPO_FULL_NAME  --repo-url $REPO_URL/$REPO_FULL_NAME 
 
