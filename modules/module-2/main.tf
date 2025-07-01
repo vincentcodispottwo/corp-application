@@ -17,6 +17,13 @@ data "aws_availability_zones" "available" {
   state = "available"
 }
 
+#[default]
+#aws_access_key_id = AKIAUM4G6O6NPGTYMV75
+#aws_secret_access_key = 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
+#output = json
+#region = us-east-1
+
+
 # VPC Config for public access
 resource "aws_vpc" "lab-vpc" {
   cidr_block           = "10.0.0.0/16"
